@@ -1,0 +1,45 @@
+/*
+let time: number = 9;
+if(time==9){
+    console.log("Welcomr to SDET Training")
+}
+    */
+
+    /*
+
+let time = 24;
+if(time>=6 && time<12){
+    console.log("Good Morning")
+}
+else if(time>=12 && time<14){
+    console.log("Good noon")
+}
+else if(time>=14 && time<20){
+    console.log("Good Evening")
+}
+else if(time>=20 && time<24){
+    console.log("Good Night")
+}
+else{
+    console.log("Invalid time");
+}
+    */
+
+let day:number=1;
+switch(day){
+    case 1:console.log("Monday")
+    break;
+    case 2:console.log("Tuesday")
+    break;
+    case 3:console.log("Wednesday")
+    break;
+    case 4:console.log("Thursday")
+    break;
+    case 5:console.log("Friday")
+    break;
+    case 6:console.log("Saturday")
+    break;
+    case 7:console.log("Sunday")
+    break;
+    default: console.log("Invalid Input");
+}
