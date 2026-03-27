@@ -1,0 +1,61 @@
+//Activity 1
+------------------------------------------------------------------------------------------------
+//Positive Secnario
+
+Feature: Buying a product 
+Secnario: Adding a product to cart on Saucedemo App
+Given User is logged in
+And user has chosen a product
+And user clicks on add to cart button for the product
+Then the product is added to cart
+
+//Negative Secnario
+
+Feature: Buying a product
+Secnario: Adding a product to cart on Saucedemo App
+Giver user is logged in
+And user has chosen a product
+But user has not clicked on add to cart button for the product
+Then the product is not added to cart
+
+
+//Activity 2
+----------------------------------------------------------------------------------------------------
+//Positive Secnario
+
+Feature: Buying a product
+Secnario: Removing a product from cart
+Given user has added products to cart
+And user chose the product to remove from cart
+And user clicks on remove from cart button of that product
+Then the product is removed from the cart
+
+//Negative Secnario
+
+Feature: Buying a product
+Secnario: Removing a product from cart
+Given user has not added products in cart
+But user tries to click on remove from cart button
+Then no products can be removed from cart
+
+//Activity 3
+--------------------------------------------------------------------------------------------------
+
+//Positive Secnario
+
+Feature: Buying a product
+Secnario: View the product description on Saucedemo
+Given user has logged in
+And user choses a product
+And click on the product description button
+Then user can view the product description 
+
+//Negative Scenario
+
+Feature: Buying a product
+Secnario: View the product description on Saucedemo
+Given user is logged in
+But user is on payment gateway
+And user returns to product catalogue section
+And clicks on the chosen product
+Then user can view the product description
